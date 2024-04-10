@@ -8,7 +8,7 @@ const server = http.createServer(app);
 const io = new Server(server, {
   maxHttpBufferSize: 1e7,
   cors: {
-    origin: ["http://localhost:3000"],
+    origin: ["http://localhost:3000", "https://chatting-app-live.onrender.com"],
     methods: ["GET", "POST"],
   },
 });
