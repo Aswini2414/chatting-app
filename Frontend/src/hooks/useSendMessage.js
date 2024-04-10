@@ -19,7 +19,7 @@ const useSendMessage = () => {
             },
           };
           const res = await axios.post(
-            `${URL}/api/messages/send/${selectedConversation._id}`,
+            `/api/messages/send/${selectedConversation._id}`,
             { message },config
             );
             if (res.error) {

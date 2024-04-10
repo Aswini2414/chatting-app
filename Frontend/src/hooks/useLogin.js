@@ -18,7 +18,7 @@ const useLogin = () => {
                     "Content-type": "application/json"
                 }
             }
-            const res = await axios.post(`${URL}/api/auth/login`, { username, password }, config);
+            const res = await axios.post(`/api/auth/login`, { username, password }, config);
             if (res.error) {
                 throw new Error(res.error);
             }

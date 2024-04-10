@@ -19,7 +19,7 @@ const useGetMessages = () => {
                 },
               };
           const res = await axios.get(
-            `${URL}/api/messages/${selectedConversation._id}`,config
+            `/api/messages/${selectedConversation._id}`,config
           );
           if (res.error) {
             throw new Error(res.error);

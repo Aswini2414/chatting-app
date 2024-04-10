@@ -19,7 +19,7 @@ const useSignup = () => {
       },
     };
             
-            const res = await axios.post(`${URL}/api/auth/signup`,
+            const res = await axios.post(`/api/auth/signup`,
                 {fullName,username,password,confirmPassword,gender},config);
             if (res.error) {
                 throw new Error(res.error);

@@ -18,7 +18,7 @@ const useGetConversations = () => {
                 }
             }
             try {
-                const res = await axios.get("http://localhost:5000/api/users",config);
+                const res = await axios.get("/api/users",config);
                 if (res.error) {
                     throw new Error(res.error);
                 }

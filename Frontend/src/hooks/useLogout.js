@@ -12,7 +12,7 @@ const useLogout = () => {
     const logout = async () => {
         setLoading(true);
         try {
-            const res = await axios.post(`${URL}/api/auth/logout`);
+            const res = await axios.post(`/api/auth/logout`);
             if (res.error) {
                 throw new Error(res.error);
             }
