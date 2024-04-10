@@ -17,10 +17,10 @@ export const SocketContextProvider = ({ children }) => {
 
     useEffect(() => {
         if (authUser) {
-            const socket = io(`${URL}`, {
-                query: {
-                    userId:authUser._id,
-                },
+            const socket = io("https://chatting-app-live.onrender.com", {
+              query: {
+                userId: authUser._id,
+              },
             });
             setSocket(socket);
 
